@@ -7,7 +7,7 @@ from api.lambda_functions.get_user_by_id import get_user_by_id
 
 @pytest.fixture(scope='function')
 def aws_credentials():
-    """Mocked AWS Credentials for moto."""
+    """ Mocked AWS Credentials for moto. """
     os.environ['AWS_ACCESS_KEY_ID'] = 'testing'
     os.environ['AWS_SECRET_ACCESS_KEY'] = 'testing'
     os.environ['AWS_SECURITY_TOKEN'] = 'testing'
